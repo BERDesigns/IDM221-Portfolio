@@ -2,14 +2,40 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  background:
-  radial-gradient(circle, transparent 20%, #111111 20%, #111111 80%, transparent 80%, transparent),
-  radial-gradient(circle, transparent 20%, #111111 20%, #111111 80%, transparent 80%, transparent) 50px 50px,
-  linear-gradient(#092816 8px, transparent 8px) 0 -4px,
-  linear-gradient(90deg, #092816 8px, transparent 8px) -4px 0;
-  background-color: #111111;
+::-webkit-scrollbar {
+  width: 10px;
+}
 
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #BBBBBB;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #FFFFFF;
+}
+
+body {
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+  font-family: "Futura", sans-serif;
+
+  animation: hueshift 60s infinite;
+}
+
+@keyframes hueshift {
+  0%{filter:hue-rotate(0deg);}
+  25%{filter:hue-rotate(90deg);}
+  50%{filter:hue-rotate(180deg);}
+  75%{filter:hue-rotate(240deg);}
+  100%{filter:hue-rotate(360deg);}
+}
+
+.background-a {
   background:
   radial-gradient(circle, transparent 20%, seagreen 20%, seagreen 80%, transparent 80%, transparent),
   radial-gradient(circle, transparent 20%, seagreen 20%, seagreen 80%, transparent 80%, transparent) 50px 50px,
@@ -18,7 +44,75 @@ body {
   background-color: seagreen;
 
   background-size:100px 100px, 100px 100px, 50px 50px, 50px 50px;
+
   background-attachment: fixed;
+  display: block;
+  height: 102%;
+  left: -1%;
+  top: -1%;
+  right: -1%;
+  z-index: -1;
+
+  position: fixed;
+}
+
+.background-b {
+  background:
+  linear-gradient(135deg, seagreen 21px, #3F9C68 22px, #3F9C68 24px, transparent 24px, transparent 67px, #3F9C68 67px, #3F9C68 69px, transparent 69px),
+  linear-gradient(225deg, seagreen 21px, #3F9C68 22px, #3F9C68 24px, transparent 24px, transparent 67px, #3F9C68 67px, #3F9C68 69px, transparent 69px)0 64px;
+  background-color:seagreen;
+
+  background-size: 64px 128px;
+
+  background-attachment: fixed;
+  display: block;
+  height: 100%;
+  left: -1%;
+  top: 100%;
+  right: -1%;
+  z-index: -1;
+
+  position: fixed;
+}
+
+.background-c {
+  background:
+  radial-gradient(circle at 100% 50%, transparent 20%, #3F9C68 21%, #3F9C68 34%, transparent 35%, transparent),
+  radial-gradient(circle at 0% 50%, transparent 20%, #3F9C68 21%, #3F9C68 34%, transparent 35%, transparent) 0 -50px;
+  background-color: seagreen;
+
+  background-size:75px 100px;
+
+  background-attachment: fixed;
+  display: block;
+  height: 100%;
+  left: -1%;
+  top: 200%;
+  right: -1%;
+  z-index: -1;
+
+  position: fixed;
+}
+
+.background-d {
+  background:
+  linear-gradient(135deg, seagreen 25%, transparent 25%) -50px 0,
+  linear-gradient(225deg, seagreen 25%, transparent 25%) -50px 0,
+  linear-gradient(315deg, seagreen 25%, transparent 25%),
+  linear-gradient(45deg, seagreen 25%, transparent 25%);
+  background-color: #3F9C68;
+
+  background-size: 100px 100px;
+
+  background-attachment: fixed;
+  display: block;
+  height: 100%;
+  left: -1%;
+  top: 300%;
+  right: -1%;
+  z-index: -1;
+
+  position: fixed;
 }
 
 .keypoint {
@@ -63,6 +157,17 @@ body {
   top: 300%;
 }
 
+#hamburger {
+  position: absolute;
+  overflow: auto;
+  margin: auto;
+
+  font-size: 4em;
+  color: white;
+
+  top: 2%; left: 95%; bottom: 0; right: 0%;
+}
+
 #logo-home-pg {
   position: absolute;
   overflow: auto;
@@ -105,4 +210,39 @@ body {
 
 #content-uarrow {
   top: 304%;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: -1%;
+  right: -1%;
+  background-color: #FFFFFF;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 2em;
+  text-align: right;
+  padding-right: 10%;
+  color: #3F9C68;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #72CFB2;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 0%;
+  font-size: 3em;
 }
