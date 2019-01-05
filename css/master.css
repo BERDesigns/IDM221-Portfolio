@@ -1,0 +1,108 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background:
+  radial-gradient(circle, transparent 20%, #111111 20%, #111111 80%, transparent 80%, transparent),
+  radial-gradient(circle, transparent 20%, #111111 20%, #111111 80%, transparent 80%, transparent) 50px 50px,
+  linear-gradient(#092816 8px, transparent 8px) 0 -4px,
+  linear-gradient(90deg, #092816 8px, transparent 8px) -4px 0;
+  background-color: #111111;
+
+  background:
+  radial-gradient(circle, transparent 20%, seagreen 20%, seagreen 80%, transparent 80%, transparent),
+  radial-gradient(circle, transparent 20%, seagreen 20%, seagreen 80%, transparent 80%, transparent) 50px 50px,
+  linear-gradient(#3F9C68	8px, transparent 8px) 0 -4px,
+  linear-gradient(90deg, #3F9C68 8px, transparent 8px) -4px 0;
+  background-color: seagreen;
+
+  background-size:100px 100px, 100px 100px, 50px 50px, 50px 50px;
+  background-attachment: fixed;
+}
+
+.keypoint {
+  position: absolute;
+  display:block;
+	text-align:center;
+  height: 100%;
+	width: 1%;
+  overflow: auto;
+}
+
+.orient-top {
+  overflow: auto;
+  margin: auto;
+  top: 0%;
+  padding-top: 1%;
+}
+
+.home-pg-arrow {
+  position: absolute;
+  overflow: auto;
+  margin: auto;
+
+  width: 5%;
+
+  left: 0; right: 0;
+}
+
+#landing {
+  top: 0%;
+}
+
+#about {
+  top: 100%;
+}
+
+#designs-games {
+  top: 200%;
+}
+
+#contact {
+  top: 300%;
+}
+
+#logo-home-pg {
+  position: absolute;
+  overflow: auto;
+  margin: auto;
+
+  top: 0%; left: 0; bottom: 0; right: 0;
+
+  width: 50%;
+}
+
+#profile {
+  position: absolute;
+  overflow: auto;
+  margin: auto;
+
+  top: 200%; left: 8%; bottom: 0; right: 92%;
+
+  width: 28%;
+}
+
+#landing-darrow {
+  top: 90%;
+}
+
+#about-uarrow {
+  top: 104%;
+}
+
+#about-darrow {
+  top: 190%;
+}
+
+#dg-uarrow {
+  top: 204%;
+}
+
+#dg-darrow {
+  top: 290%;
+}
+
+#content-uarrow {
+  top: 304%;
+}
