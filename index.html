@@ -6,7 +6,33 @@
     <link rel="stylesheet" href="css/master.css">
   </head>
   <body>
+    <div class="background-a"></div>
+    <div class="background-b"></div>
+    <div class="background-c"></div>
+    <div class="background-d"></div>
     <div class="keypoint" id="landing"></div>
+    <span id="hamburger" onclick="openNav()">&#9776;</span>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&#128473;</a>
+      <br>
+      <br>
+      <a href="#landing">HOME</a>
+      <br>
+      <a href="#about">ABOUT</a>
+      <br>
+      <a href="#designs-games">DESIGNS & GAMES</a>
+      <br>
+      <a href="#contact">CONTACT ME</a>
+    </div>
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "15%";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+    </script>
     <a id="logo" href="#landing"><img src="img/logo/logowithshadow.png" id="logo-home-pg" alt="Logo"></a>
     <a class="arrow" href="#about"><img src="img/arrows/downarrow.png" id="landing-darrow" class="home-pg-arrow" alt="Down Arrow"></a>
     <div class="keypoint" id="about"></div>
