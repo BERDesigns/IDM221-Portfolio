@@ -15,22 +15,26 @@
     <div id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&#128473;</a>
       <br>
-      <br>
-      <a href="#landing">HOME</a>
-      <br>
-      <a href="#about">ABOUT</a>
-      <br>
-      <a href="#designs-games">DESIGNS & GAMES</a>
-      <br>
-      <a href="#contact">CONTACT ME</a>
+      <a href="#landing" onclick="closeNav()">HOME</a>
+      <br><br>
+      <a href="#about" onclick="closeNav()">ABOUT</a>
+      <br><br>
+      <a href="#designs-games" onclick="closeNav()">DESIGNS & GAMES</a>
+      <br><br>
+      <a href="#contact" onclick="closeNav()">CONTACT ME</a>
+      <a href="https://twitter.com/BeckMakesGames" onclick="closeNav()" target="_blank"><img src="img/twitter.png" class="linklogo" id="Twitter" alt="twitter"></a>
+      <a href="https://www.linkedin.com/in/beckrivera/" onclick="closeNav()" target="_blank"><img src="img/linkedin.png" class="linklogo" id="LinkedIn" alt="linkedin"></a>
+      <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=riverabecke@gmail.com" onclick="closeNav()" target="_blank"><img src="img/gmail.png" id="gmail" class="linklogo" alt="GMail"></a>
     </div>
     <script>
       function openNav() {
-        document.getElementById("mySidenav").style.width = "15%";
+        document.getElementById("mySidenav").style.zIndex = "1";
+        document.getElementById("mySidenav").style.height = "100%";
       }
 
       function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("mySidenav").style.height = "0";
+        document.getElementById("mySidenav").style.zIndex = "-2";
       }
     </script>
     <a id="logo" href="#landing"><img src="img/logo/logowithshadow.png" id="logo-home-pg" alt="Logo"></a>
