@@ -48,9 +48,9 @@ body {
   background-attachment: fixed;
   display: block;
   height: 102%;
-  left: -1%;
+  left: -2%;
   top: -1%;
-  right: -1%;
+  right: -2%;
   z-index: -1;
 
   position: fixed;
@@ -67,9 +67,9 @@ body {
   background-attachment: fixed;
   display: block;
   height: 100%;
-  left: -1%;
+  left: -2%;
   top: 100%;
-  right: -1%;
+  right: -2%;
   z-index: -1;
 
   position: fixed;
@@ -86,9 +86,9 @@ body {
   background-attachment: fixed;
   display: block;
   height: 100%;
-  left: -1%;
+  left: -2%;
   top: 200%;
-  right: -1%;
+  right: -2%;
   z-index: -1;
 
   position: fixed;
@@ -107,9 +107,9 @@ body {
   background-attachment: fixed;
   display: block;
   height: 100%;
-  left: -1%;
+  left: -2%;
   top: 300%;
-  right: -1%;
+  right: -2%;
   z-index: -1;
 
   position: fixed;
@@ -158,14 +158,14 @@ body {
 }
 
 #hamburger {
-  position: absolute;
+  position: fixed;
   overflow: auto;
   margin: auto;
 
-  font-size: 4em;
+  font-size: 3em;
   color: white;
 
-  top: 2%; left: 95%; bottom: 0; right: 0%;
+  top: 0; right: 0.5%;
 }
 
 #logo-home-pg {
@@ -213,12 +213,11 @@ body {
 }
 
 .sidenav {
-  height: 100%;
-  width: 0;
+  height: 0;
+  width: 104%;
   position: fixed;
-  z-index: 1;
-  top: -1%;
-  right: -1%;
+  z-index: -2;
+  top: -1%; left: -2%;
   background-color: #FFFFFF;
   overflow-x: hidden;
   transition: 0.5s;
@@ -228,9 +227,8 @@ body {
 .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 2em;
-  text-align: right;
-  padding-right: 10%;
+  font-size: 3.5em;
+  text-align: center;
   color: #3F9C68;
   display: block;
   transition: 0.3s;
@@ -242,7 +240,61 @@ body {
 
 .sidenav .closebtn {
   position: absolute;
-  top: 0;
-  right: 0%;
-  font-size: 3em;
+  padding-right: 0.7em;
+  top: 0; right: 0;
+  font-size: 5em;
+}
+
+.linklogo {
+  padding: 8px 8px 8px 32px;
+  position: absolute;
+  display: block;
+  top: 70%;
+  width: 8%;
+  transition: 0.3s;
+  bottom: 0;
+}
+
+#twitter {
+  left: 20%;
+}
+
+#linkedin {
+  left: 44%;
+}
+
+#gmail {
+  left: 70%;
+}
+
+.linklogo:hover {
+  opacity: 0.5;
+}
+
+@media only screen and (orientation: portrait) {
+  .sidenav a {
+    font-size: 2.3em;
+  }
+
+  .sidenav .closebtn {
+    padding-right: 0.2em;
+    font-size: 3.5em;
+  }
+
+  .linklogo {
+    width: 16%;
+    top: 75%;
+  }
+
+  #twitter {
+    left: 15%;
+  }
+
+  #linkedin {
+    left: 36%;
+  }
+
+  #gmail {
+    left: 60%;
+  }
 }
