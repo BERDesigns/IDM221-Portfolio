@@ -15,7 +15,7 @@ html {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #FFFFFF;
+  background: #DDDDDD;
 }
 
 body {
@@ -50,7 +50,7 @@ body {
   height: 102%;
   left: -2%;
   top: -1%;
-  right: -2%;
+  right: -5%;
   z-index: -1;
 
   position: fixed;
@@ -69,7 +69,7 @@ body {
   height: 100%;
   left: -2%;
   top: 100%;
-  right: -2%;
+  right: -5%;
   z-index: -1;
 
   position: fixed;
@@ -88,7 +88,7 @@ body {
   height: 100%;
   left: -2%;
   top: 200%;
-  right: -2%;
+  right: -5%;
   z-index: -1;
 
   position: fixed;
@@ -109,7 +109,7 @@ body {
   height: 100%;
   left: -2%;
   top: 300%;
-  right: -2%;
+  right: -5%;
   z-index: -1;
 
   position: fixed;
@@ -139,6 +139,12 @@ body {
   width: 5%;
 
   left: 0; right: 0;
+
+  transition: 0.3s;
+}
+
+.home-pg-arrow:hover {
+  opacity: 0.5;
 }
 
 #landing {
@@ -161,11 +167,20 @@ body {
   position: fixed;
   overflow: auto;
   margin: auto;
+  display: block;
 
-  font-size: 3em;
+  text-shadow: 0 0.1em 10px #000000, 0 0 5px #000000;
+
+  font-size: 4em;
   color: white;
 
   top: 0; right: 0.5%;
+
+  transition: 0.3s;
+}
+
+#hamburger:hover {
+  opacity: 0.5;
 }
 
 #logo-home-pg {
@@ -176,6 +191,28 @@ body {
   top: 0%; left: 0; bottom: 0; right: 0;
 
   width: 50%;
+
+  transition: 0.3s;
+}
+
+#logo-home-pg:hover {
+  opacity: 0.7;
+}
+
+#logo-dg {
+  position: absolute;
+  overflow: auto;
+  margin: auto;
+
+  top: 0; left: 0; right: 0;
+
+  width: 15%;
+
+  transition: 0.3s;
+}
+
+#logo-dg:hover {
+  opacity: 0.7;
 }
 
 #profile {
@@ -186,6 +223,189 @@ body {
   top: 200%; left: 8%; bottom: 0; right: 92%;
 
   width: 28%;
+}
+
+h1 {
+  color: white;
+  font-size: 7em;
+
+  text-shadow: 0 0.1em 10px #222222, 0 0 5px #000000;
+}
+
+#abt-me {
+  position: absolute;
+  overflow: auto;
+  margin: auto;
+
+  top: 112%; right: 16%;
+}
+
+#abt-desc {
+  position: absolute;
+  overflow: auto;
+  margin: auto;
+
+  padding-right: 80px;
+
+  color: white;
+  font-size: 2.5em;
+  text-align: center;
+  text-shadow: 0 0.1em 10px #222222, 0 0 5px #000000;
+
+  top: 132%; left: 40%;
+}
+
+#resume-button {
+  position: absolute;
+  overflow: auto;
+  margin: auto;
+
+  background-color: #FFFFFF;
+  border: none;
+  color: #3F9C68;
+  padding: 15px 32px;
+
+  box-shadow: 0 0.4em 10px #444444, 0 0 5px #222222;
+
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+
+  top: 178%; left: 59%;
+
+  font-size: 1.5em;
+  margin: 4px 2px;
+
+  transition: 0.3s;
+}
+
+#resume-button:hover {
+  opacity: 0.5;
+}
+
+#designs {
+  position: absolute;
+  overflow: auto;
+  margin: auto;
+
+  transition: 0.3s;
+
+  top: 243%; left: 12%;
+}
+
+#designs:hover {
+  opacity: 0.5;
+}
+
+#games {
+  position: absolute;
+  overflow: auto;
+  margin: auto;
+
+  transition: 0.3s;
+
+  top: 243%; right: 12%;
+}
+
+#games:hover {
+  opacity: 0.5;
+}
+
+#contact-me {
+  position: absolute;
+  overflow: auto;
+  margin: auto;
+
+  font-size: 6em;
+  text-align: center;
+
+  top: 312%; left: 0; right: 0;
+}
+
+.input-field {
+  position: absolute;
+  overflow: auto;
+  margin: auto;
+
+  padding:8px;
+  display:block;
+
+  font-size: 1em;
+  font-family: "Futura", sans-serif;
+
+  border: none;
+  border-bottom: 1px solid #FFFFFF;
+
+  background-color: #FFFFFF;
+  opacity: 0.8;
+
+  width: 50%;
+  left: 0; right: 0;
+
+  transition: 0.3s;
+}
+
+.input-field:hover {
+  opacity: 0.3;
+}
+
+#input-name {
+  top: 330%;
+}
+
+#input-phone {
+  top: 340%;
+}
+
+#input-email {
+  top: 350%;
+}
+
+#input-message {
+  top: 360%;
+  height: 15%;
+}
+
+#submit-button {
+  position: absolute;
+  overflow: auto;
+  margin: auto;
+
+  background-color: #FFFFFF;
+  border: none;
+  color: #3F9C68;
+  padding: 15px 32px;
+
+  box-shadow: 0 0.4em 10px #444444, 0 0 5px #222222;
+
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+
+  width: 6%;
+  top: 380%; left: 44%; right: 0;
+
+  font-size: 1em;
+  margin: 4px 2px;
+
+  transition: 0.3s;
+}
+
+#submit-button:hover {
+  opacity: 0.5;
+}
+
+#copyright {
+  position: absolute;
+  overflow: auto;
+  margin: auto;
+
+  color: white;
+  font-size: 2em;
+
+  text-shadow: 0 0.1em 10px #222222, 0 0 5px #000000;
+
+  top: 395%; left: 0.5%;
 }
 
 #landing-darrow {
@@ -214,10 +434,9 @@ body {
 
 .sidenav {
   height: 0;
-  width: 104%;
   position: fixed;
   z-index: -2;
-  top: -1%; left: -2%;
+  top: -1%; left: -2%; right: -5%;
   background-color: #FFFFFF;
   overflow-x: hidden;
   transition: 0.5s;
@@ -225,7 +444,7 @@ body {
 }
 
 .sidenav a {
-  padding: 8px 8px 8px 32px;
+  padding: 8px 32px 8px 32px;
   text-decoration: none;
   font-size: 3.5em;
   text-align: center;
@@ -240,8 +459,7 @@ body {
 
 .sidenav .closebtn {
   position: absolute;
-  padding-right: 0.7em;
-  top: 0; right: 0;
+  top: 0; right: 5%;
   font-size: 5em;
 }
 
@@ -271,7 +489,100 @@ body {
   opacity: 0.5;
 }
 
+#designs-title {
+  text-align: left;
+
+  top: 2%; left: 14%;
+
+  transition: 0.3s;
+}
+
+#games-title {
+  text-align: right;
+
+  top: 2%; right: 17%;
+
+  transition: 0.3s;
+}
+
+#games-title:hover {
+  opacity: 1.0;
+}
+
+.dg-title {
+  position: absolute;
+  overflow: auto;
+  margin: auto;
+
+  font-size: 4em;
+}
+
+.in-other {
+  opacity: 0.5;
+}
+
+.in-other:hover {
+  opacity: 1;
+}
+
 @media only screen and (orientation: portrait) {
+  #abt-me {
+    font-size: 3em;
+  }
+
+  #abt-desc {
+    font-size: 1.1em;
+    padding-right: 40px;
+
+    top: 122%;
+  }
+
+  #resume-button {
+    font-size: 1.1em;
+
+    padding: 10px 22px;
+
+    top: 180%; left: 40%;
+  }
+
+  #designs {
+    font-size: 4.5em;
+
+    text-align: center;
+
+    top: 230%; left: 0; right: 0;
+  }
+
+  #games {
+    font-size: 4.5em;
+
+    text-align: center;
+
+    top: 255%; left: 0; right: 0;
+  }
+
+  #contact-me {
+    font-size: 4em;
+  }
+
+  .input-field {
+    width: 90%;
+  }
+
+  #submit-button {
+    font-size: 0.8em;
+    left: 35%;
+    width: 15%;
+  }
+
+  #copyright {
+    font-size: 1.2em;
+  }
+
+  #hamburger {
+    font-size: 3em;
+  }
+
   .sidenav a {
     font-size: 2.3em;
   }
