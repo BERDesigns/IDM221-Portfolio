@@ -4,6 +4,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BER Designs</title>
     <link rel="stylesheet" href="css/master.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    var x = 0;
+      function openNav() {
+        document.getElementById("mySidenav").style.zIndex = "1";
+        document.getElementById("mySidenav").style.height = "100%";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.height = "0";
+        document.getElementById("mySidenav").style.zIndex = "-2";
+      }
+
+      $(window).scroll(function(){
+        document.getElementById("mySidenav").style.top = parseInt(window.scrollY-10).toString()+"px";
+        document.getElementById("hamburger").style.top = parseInt(window.scrollY).toString()+"px";
+      });
+    </script>
   </head>
   <body>
     <div class="background-a"></div>
@@ -26,27 +44,30 @@
       <a href="https://www.linkedin.com/in/beckrivera/" onclick="closeNav()" target="_blank"><img src="img/linkedin.png" class="linklogo" id="LinkedIn" alt="linkedin"></a>
       <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=riverabecke@gmail.com" onclick="closeNav()" target="_blank"><img src="img/gmail.png" id="gmail" class="linklogo" alt="GMail"></a>
     </div>
-    <script>
-      function openNav() {
-        document.getElementById("mySidenav").style.zIndex = "1";
-        document.getElementById("mySidenav").style.height = "100%";
-      }
-
-      function closeNav() {
-        document.getElementById("mySidenav").style.height = "0";
-        document.getElementById("mySidenav").style.zIndex = "-2";
-      }
-    </script>
     <a id="logo" href="#landing"><img src="img/logo/logowithshadow.png" id="logo-home-pg" alt="Logo"></a>
     <a class="arrow" href="#about"><img src="img/arrows/downarrow.png" id="landing-darrow" class="home-pg-arrow" alt="Down Arrow"></a>
     <div class="keypoint" id="about"></div>
     <a class="arrow" href="#landing"><img src="img/arrows/uparrow.png" id="about-uarrow" class="home-pg-arrow" alt="Up Arrow"></a>
-    <img src="img/profiletest.png" id="profile" alt="Designer's Picture">
+    <img src="img/profile.png" id="profile" alt="Designer's Picture">
+    <h1 id="abt-me">ABOUT ME</h1>
+    <p id="abt-desc">Hello! My name is Beck. I'm a web and game designer based in Philadelphia, PA. I specialize in User Interface and User Experience design, utilizing my skills to make dynamic website designs for clients. If you want to contact me about my services, feel free to shoot me an email under the contact section below.</p>
+    <a id="resume-button" href="BR_resume.pdf">VIEW MY RESUME</a>
     <a class="arrow" href="#designs-games"><img src="img/arrows/downarrow.png" id="about-darrow" class="home-pg-arrow" alt="Down Arrow"></a>
     <div class="keypoint" id="designs-games"></div>
     <a class="arrow" href="#about"><img src="img/arrows/uparrow.png" id="dg-uarrow" class="home-pg-arrow" alt="Up Arrow"></a>
+    <a href="designs.html"><h1 id="designs">DESIGNS</h1></a>
+    <a href="games.html"><h1 id="games">GAMES</h1></a>
     <a class="arrow" href="#contact"><img src="img/arrows/downarrow.png" id="dg-darrow" class="home-pg-arrow" alt="Down Arrow"></a>
     <div class="keypoint" id="contact"></div>
     <a class="arrow" href="#designs-games"><img src="img/arrows/uparrow.png" id="content-uarrow" class="home-pg-arrow" alt="Up Arrow"></a>
+    <h1 id="contact-me">CONTACT ME</h1>
+    <form id="contact-form" action="index.html" method="post">
+      <input id="input-name" class="input-field" type="text" required="" placeholder="NAME">
+      <input id="input-phone" class="input-field" type="text" required="" placeholder="PHONE">
+      <input id="input-email" class="input-field" type="text" required="" placeholder="EMAIL">
+      <textarea id="input-message" class="input-field" type="text" required="" placeholder="MESSAGE"></textarea>
+      <a id="submit-button" href="#">SUBMIT</a>
+    </form>
+    <h2 id="copyright">&copy; Beck Rivera 2019</h1>
   </body>
 </html>
