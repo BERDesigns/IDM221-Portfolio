@@ -1,3 +1,5 @@
+html, body { height: 100% }
+
 html {
   scroll-behavior: smooth;
 }
@@ -33,6 +35,14 @@ body {
   50%{filter:hue-rotate(180deg);}
   75%{filter:hue-rotate(240deg);}
   100%{filter:hue-rotate(360deg);}
+}
+
+@keyframes antihs {
+  0%{filter:hue-rotate(0deg);}
+  25%{filter:hue-rotate(-90deg);}
+  50%{filter:hue-rotate(-180deg);}
+  75%{filter:hue-rotate(-240deg);}
+  100%{filter:hue-rotate(-360deg);}
 }
 
 .background-a {
@@ -525,6 +535,37 @@ h1 {
   opacity: 1;
 }
 
+#row-a {
+  position: absolute;
+  overflow: auto;
+  margin: auto;
+
+  top: 15%;
+}
+
+.row {
+  animation: antihs 60s infinite;
+
+  display: flex;
+
+  width: 95%;
+
+  left: 0; right: 0;
+}
+
+.column {
+  flex: 40%;
+  padding: 20px;
+
+  filter: grayscale(100%);
+
+  transition: 0.3s;
+}
+
+.column:hover {
+  filter: grayscale(0%);
+}
+
 @media only screen and (orientation: portrait) {
   #abt-me {
     font-size: 3em;
@@ -607,5 +648,31 @@ h1 {
 
   #gmail {
     left: 60%;
+  }
+
+  .dg-title {
+    font-size: 2em;
+  }
+
+  #designs-title {
+    left: 8%;
+  }
+
+  #games-title {
+    right: 14%;
+  }
+
+  #logo-dg {
+    width: 20%;
+  }
+
+  .row {
+    display: block;
+
+    width: 70%;
+  }
+
+  #background-a-dg {
+    height: 300%;
   }
 }
