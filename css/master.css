@@ -2,6 +2,8 @@ html, body { height: 100% }
 
 html {
   scroll-behavior: smooth;
+  font-family: "futura-pt" !important;
+  font-weight: bold;
 }
 
 ::-webkit-scrollbar {
@@ -24,7 +26,7 @@ body {
   overflow-y: scroll;
   overflow-x: hidden;
 
-  font-family: "Futura", sans-serif;
+  font-family: "futura-pt";
 
   animation: hueshift 60s infinite;
 }
@@ -46,6 +48,8 @@ body {
 }
 
 .background-a {
+  overflow-x: hidden;
+
   background:
   radial-gradient(circle, transparent 20%, seagreen 20%, seagreen 80%, transparent 80%, transparent),
   radial-gradient(circle, transparent 20%, seagreen 20%, seagreen 80%, transparent 80%, transparent) 50px 50px,
@@ -57,9 +61,9 @@ body {
 
   background-attachment: fixed;
   display: block;
-  height: 102%;
-  left: -2%;
-  top: -1%;
+  height: 106%;
+  left: -5%;
+  top: -5%;
   right: -5%;
   z-index: -1;
 
@@ -67,6 +71,8 @@ body {
 }
 
 .background-b {
+  overflow-x: hidden;
+
   background:
   linear-gradient(135deg, seagreen 21px, #3F9C68 22px, #3F9C68 24px, transparent 24px, transparent 67px, #3F9C68 67px, #3F9C68 69px, transparent 69px),
   linear-gradient(225deg, seagreen 21px, #3F9C68 22px, #3F9C68 24px, transparent 24px, transparent 67px, #3F9C68 67px, #3F9C68 69px, transparent 69px)0 64px;
@@ -77,7 +83,7 @@ body {
   background-attachment: fixed;
   display: block;
   height: 100%;
-  left: -2%;
+  left: -5%;
   top: 100%;
   right: -5%;
   z-index: -1;
@@ -86,6 +92,8 @@ body {
 }
 
 .background-c {
+  overflow-x: hidden;
+
   background:
   radial-gradient(circle at 100% 50%, transparent 20%, #3F9C68 21%, #3F9C68 34%, transparent 35%, transparent),
   radial-gradient(circle at 0% 50%, transparent 20%, #3F9C68 21%, #3F9C68 34%, transparent 35%, transparent) 0 -50px;
@@ -96,7 +104,7 @@ body {
   background-attachment: fixed;
   display: block;
   height: 100%;
-  left: -2%;
+  left: -5%;
   top: 200%;
   right: -5%;
   z-index: -1;
@@ -105,6 +113,8 @@ body {
 }
 
 .background-d {
+  overflow-x: hidden;
+
   background:
   linear-gradient(135deg, seagreen 25%, transparent 25%) -50px 0,
   linear-gradient(225deg, seagreen 25%, transparent 25%) -50px 0,
@@ -117,7 +127,7 @@ body {
   background-attachment: fixed;
   display: block;
   height: 100%;
-  left: -2%;
+  left: -5%;
   top: 300%;
   right: -5%;
   z-index: -1;
@@ -179,9 +189,9 @@ body {
   margin: auto;
   display: block;
 
-  text-shadow: 0 0.1em 10px #000000, 0 0 5px #000000;
+  text-shadow: 0 0.1vw 10px #000000, 0 0 5px #000000;
 
-  font-size: 4em;
+  font-size: 4vw;
   color: white;
 
   top: 0; right: 0.5%;
@@ -237,9 +247,9 @@ body {
 
 h1 {
   color: white;
-  font-size: 7em;
+  font-size: 7vw;
 
-  text-shadow: 0 0.1em 10px #222222, 0 0 5px #000000;
+  text-shadow: 0 0.1vw 10px #222222, 0 0 5px #000000;
 }
 
 #abt-me {
@@ -258,9 +268,9 @@ h1 {
   padding-right: 80px;
 
   color: white;
-  font-size: 2.5em;
+  font-size: 2.5vw;
   text-align: center;
-  text-shadow: 0 0.1em 10px #222222, 0 0 5px #000000;
+  text-shadow: 0 0.1vw 10px #222222, 0 0 5px #000000;
 
   top: 132%; left: 40%;
 }
@@ -275,7 +285,7 @@ h1 {
   color: #3F9C68;
   padding: 15px 32px;
 
-  box-shadow: 0 0.4em 10px #444444, 0 0 5px #222222;
+  box-shadow: 0 0.4vw 10px #444444, 0 0 5px #222222;
 
   text-align: center;
   text-decoration: none;
@@ -283,7 +293,7 @@ h1 {
 
   top: 178%; left: 59%;
 
-  font-size: 1.5em;
+  font-size: 1.5vw;
   margin: 4px 2px;
 
   transition: 0.3s;
@@ -326,7 +336,7 @@ h1 {
   overflow: auto;
   margin: auto;
 
-  font-size: 6em;
+  font-size: 6vw;
   text-align: center;
 
   top: 312%; left: 0; right: 0;
@@ -340,14 +350,14 @@ h1 {
   padding:8px;
   display:block;
 
-  font-size: 1em;
-  font-family: "Futura", sans-serif;
+  font-size: 1vw;
+  font-family: "futura-pt";
 
   border: none;
   border-bottom: 1px solid #FFFFFF;
 
   background-color: #FFFFFF;
-  opacity: 0.8;
+  opacity: 0.6;
 
   width: 50%;
   left: 0; right: 0;
@@ -357,6 +367,10 @@ h1 {
 
 .input-field:hover {
   opacity: 0.3;
+}
+
+.input-field:focus {
+  opacity: 0.8;
 }
 
 #input-name {
@@ -386,7 +400,7 @@ h1 {
   color: #3F9C68;
   padding: 15px 32px;
 
-  box-shadow: 0 0.4em 10px #444444, 0 0 5px #222222;
+  box-shadow: 0 0.4vw 10px #444444, 0 0 5px #222222;
 
   text-align: center;
   text-decoration: none;
@@ -395,7 +409,7 @@ h1 {
   width: 6%;
   top: 380%; left: 44%; right: 0;
 
-  font-size: 1em;
+  font-size: 1vw;
   margin: 4px 2px;
 
   transition: 0.3s;
@@ -411,9 +425,9 @@ h1 {
   margin: auto;
 
   color: white;
-  font-size: 2em;
+  font-size: 2vw;
 
-  text-shadow: 0 0.1em 10px #222222, 0 0 5px #000000;
+  text-shadow: 0 0.1vw 10px #222222, 0 0 5px #000000;
 
   top: 395%; left: 0.5%;
 }
@@ -456,7 +470,7 @@ h1 {
 .sidenav a {
   padding: 8px 32px 8px 32px;
   text-decoration: none;
-  font-size: 3.5em;
+  font-size: 3.5vw;
   text-align: center;
   color: #3F9C68;
   display: block;
@@ -470,7 +484,7 @@ h1 {
 .sidenav .closebtn {
   position: absolute;
   top: 0; right: 5%;
-  font-size: 5em;
+  font-size: 5vw;
 }
 
 .linklogo {
@@ -524,7 +538,7 @@ h1 {
   overflow: auto;
   margin: auto;
 
-  font-size: 4em;
+  font-size: 4vw;
 }
 
 .in-other {
@@ -568,69 +582,64 @@ h1 {
 
 @media only screen and (orientation: portrait) {
   #abt-me {
-    font-size: 3em;
+    font-size: 10vw;
+
+    text-align: center;
+
+    left: 0; right: 0;
+  }
+
+  #contact-me {
+    font-size: 10vw;
   }
 
   #abt-desc {
-    font-size: 1.1em;
     padding-right: 40px;
 
-    top: 122%;
+    font-size: 4vw;
+
+    top: 142%; left: 5%;
+    width: 90%;
   }
 
   #resume-button {
-    font-size: 1.1em;
+    font-size: 3vw;
 
     padding: 10px 22px;
 
-    top: 180%; left: 40%;
+    top: 180%; left: 20%; right: 20%;
   }
 
   #designs {
-    font-size: 4.5em;
-
+    font-size: 15vw;
     text-align: center;
 
     top: 230%; left: 0; right: 0;
   }
 
   #games {
-    font-size: 4.5em;
-
+    font-size: 15vw;
     text-align: center;
 
     top: 255%; left: 0; right: 0;
   }
 
-  #contact-me {
-    font-size: 4em;
-  }
-
   .input-field {
+    font-size: 2vw;
+
     width: 90%;
   }
 
   #submit-button {
-    font-size: 0.8em;
+    font-size: 3vw;
+
     left: 35%;
     width: 15%;
   }
 
-  #copyright {
-    font-size: 1.2em;
-  }
-
-  #hamburger {
-    font-size: 3em;
-  }
-
-  .sidenav a {
-    font-size: 2.3em;
-  }
 
   .sidenav .closebtn {
-    padding-right: 0.2em;
-    font-size: 3.5em;
+    padding-right: 0.2vw;
   }
 
   .linklogo {
@@ -650,10 +659,6 @@ h1 {
     left: 60%;
   }
 
-  .dg-title {
-    font-size: 2em;
-  }
-
   #designs-title {
     left: 8%;
   }
@@ -664,6 +669,12 @@ h1 {
 
   #logo-dg {
     width: 20%;
+  }
+
+  #profile {
+    top: 160%;
+
+    left: 0; right: 0;
   }
 
   .row {
