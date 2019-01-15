@@ -8,59 +8,61 @@
     <link rel="stylesheet" href="css/master.css">
     <link rel="shortcut icon" href="img/logo/favicon.ico">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script>
-    var x = 0;
-      function openNav() {
-        document.getElementById("mySidenav").style.zIndex = "1";
-        document.getElementById("mySidenav").style.height = "100%";
-      }
-
-      function closeNav() {
-        document.getElementById("mySidenav").style.height = "0";
-        document.getElementById("mySidenav").style.zIndex = "-2";
-      }
-
-      $(window).scroll(function(){
-        document.getElementById("mySidenav").style.top = parseInt(window.scrollY-10).toString()+"px";
-        document.getElementById("hamburger").style.top = parseInt(window.scrollY).toString()+"px";
-      });
-    </script>
+    <script src = "js/main.js"></script>
   </head>
   <body>
     <div class="background-a" id="background-a-dg"></div>
-    <span id="hamburger" onclick="openNav()">&#9776;</span>
+    <span onclick="openNav()"><img src="img/hamburger.png" id="hamburger" alt="Hamburger"></span>
     <div id="mySidenav" class="sidenav">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&#128473;</a>
+      <a href="javascript:void(0)" onclick="closeNav()"><img src="img/x.png" class="closebtn" alt="X"></a>
       <br>
-      <a href="#landing" onclick="closeNav()">HOME</a>
+      <a href="index.html#landing" onclick="closeNav()">HOME</a>
       <br><br>
-      <a href="#about" onclick="closeNav()">ABOUT</a>
+      <a href="index.html#about" onclick="closeNav()">ABOUT</a>
       <br><br>
-      <a href="#designs-games" onclick="closeNav()">DESIGNS & GAMES</a>
+      <a href="index.html#designs-games" onclick="closeNav()">DESIGNS & GAMES</a>
       <br><br>
-      <a href="#contact" onclick="closeNav()">CONTACT ME</a>
+      <a href="index.html#contact" onclick="closeNav()">CONTACT ME</a>
       <a href="https://twitter.com/BeckMakesGames" onclick="closeNav()" target="_blank"><img src="img/twitter.png" class="linklogo" id="twitter" alt="twitter"></a>
       <a href="https://www.linkedin.com/in/beckrivera/" onclick="closeNav()" target="_blank"><img src="img/linkedin.png" class="linklogo" id="linkedin" alt="linkedin"></a>
       <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=riverabecke@gmail.com" onclick="closeNav()" target="_blank"><img src="img/gmail.png" id="gmail" class="linklogo" alt="GMail"></a>
+    </div>
+    <div id="MHCCDropdown" class="dropdown">
+      <a href="javascript:void(0)" onclick="closeDropdown(1)"><img src="img/x.png" class="closebtn" alt="X"></a>
+    </div>
+    <div id="oldPortDropdown" class="dropdown">
+      <a href="javascript:void(0)" onclick="closeDropdown(2)"><img src="img/x.png" class="closebtn" alt="X"></a>
+    </div>
+    <div id="photosDropdown" class="dropdown">
+      <a href="javascript:void(0)" onclick="closeDropdown(3)"><img src="img/x.png" class="closebtn" alt="X"></a>
+    </div>
+    <div id="mayaDropdown" class="dropdown">
+      <a href="javascript:void(0)" onclick="closeDropdown(4)"><img src="img/x.png" class="closebtn" alt="X"></a>
+    </div>
+    <div id="illusDropdown" class="dropdown">
+      <a href="javascript:void(0)" onclick="closeDropdown(5)"><img src="img/x.png" class="closebtn" alt="X"></a>
     </div>
     <a id="logo" href="index.html"><img src="img/logo/logowithshadow.png" id="logo-dg" alt="Logo"></a>
     <a href="designs.html"><h1 class="dg-title" id="designs-title">DESIGNS</h1></a>
     <a href="games.html"><h1 class="dg-title in-other" id="games-title">GAMES</h1></a>
     <div class="row" id="row-a">
       <div class="column">
-        <a href="https://mantuahaverfordcommunitycenter.wordpress.com/" target="_blank"><img src="img/projects/mhcc.png" alt="MHCC" style="width:100%"></a>
+        <!--https://mantuahaverfordcommunitycenter.wordpress.com/-->
+        <a onclick="closeDropdown(0);openDropdown(1);" href="javascript:void(0)" target="_blank"><img src="img/projects/mhcc.png" alt="MHCC" style="width:100%"></a>
       </div>
       <div class="column">
-        <a href="http://berivera1.github.io/" target="_blank"><img src="img/projects/ber.png" alt="Old Portfolio" style="width:100%"></a>
+        <!--http://berivera1.github.io/-->
+        <a onclick="closeDropdown(0);openDropdown(2);" href="javascript:void(0)" target="_blank"><img src="img/projects/ber.png" alt="Old Portfolio" style="width:100%"></a>
       </div>
       <div class="column">
-        <a href="https://thebernecessities.wordpress.com/" target="_blank"><img src="img/projects/necessities.png" alt="Photography Blog" style="width:100%"></a>
+        <!--https://thebernecessities.wordpress.com/-->
+        <a onclick="closeDropdown(0);openDropdown(3);" href="javascript:void(0)" target="_blank"><img src="img/projects/necessities.png" alt="Photography Blog" style="width:100%"></a>
       </div>
       <div class="column">
-        <img src="img/projects/maya.png" alt="Autodesk Maya Projects" style="width:100%">
+        <a onclick="closeDropdown(0);openDropdown(4);" href="javascript:void(0)" target="_blank"><img src="img/projects/maya.png" alt="Autodesk Maya Projects" style="width:100%"></a>
       </div>
       <div class="column">
-        <img src="img/projects/illustrator.png" alt="Adobe Illustrator Projects" style="width:100%">
+        <a onclick="closeDropdown(0);openDropdown(5);" href="javascript:void(0)" target="_blank"><img src="img/projects/illustrator.png" alt="Adobe Illustrator Projects" style="width:100%"></a>
       </div>
     </div>
   </body>

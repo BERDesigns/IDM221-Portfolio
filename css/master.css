@@ -189,10 +189,7 @@ body {
   margin: auto;
   display: block;
 
-  text-shadow: 0 0.1vw 10px #000000, 0 0 5px #000000;
-
-  font-size: 4vw;
-  color: white;
+  width: 4%;
 
   top: 0; right: 0.5%;
 
@@ -291,7 +288,7 @@ h1 {
   text-decoration: none;
   display: inline-block;
 
-  top: 180%; left: 59%;
+  top: 180%; left: 58%;
 
   font-size: 1.5vw;
   margin: 4px 2px;
@@ -460,7 +457,7 @@ h1 {
   height: 0;
   position: fixed;
   z-index: -2;
-  top: -1%; left: -2%; right: -5%;
+  top: -1%; left: -5%; right: -5%;
   background-color: #FFFFFF;
   overflow-x: hidden;
   transition: 0.5s;
@@ -483,8 +480,35 @@ h1 {
 
 .sidenav .closebtn {
   position: absolute;
-  top: 0; right: 5%;
-  font-size: 5vw;
+  top: 1%; right: 5%;
+
+  width: 4%;
+}
+
+.sidenav .closebtn:hover {
+  opacity: 0.5;
+}
+
+.dropdown {
+  height: 0;
+  position: fixed;
+  z-index: -2;
+  top: 55%; left: -5%; right: -5%;
+  background-color: #FFFFFF;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.dropdown .closebtn {
+  position: absolute;
+  top: 2%; right: 5%;
+
+  width: 3%;
+}
+
+.dropdown .closebtn:hover {
+  opacity: 0.5;
 }
 
 .linklogo {
@@ -582,7 +606,7 @@ h1 {
 
 @media only screen and (orientation: portrait) {
   #hamburger {
-    font-size: 10vw;
+    width: 10%;
 
     padding-right: 2%;
   }
@@ -698,7 +722,7 @@ h1 {
 
 
   .sidenav .closebtn {
-    font-size: 10vw;
+    width: 10%;
 
     padding-right: 2%;
   }
