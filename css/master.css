@@ -47,6 +47,13 @@ body {
   100%{filter:hue-rotate(-360deg);}
 }
 
+h1 {
+  color: white;
+  font-size: 7vw;
+
+  text-shadow: 0 0.1vw 10px #222222, 0 0 5px #000000;
+}
+
 .background-a {
   overflow-x: hidden;
 
@@ -189,9 +196,9 @@ body {
   margin: auto;
   display: block;
 
-  width: 4%;
+  width: 5%;
 
-  top: 0; right: 0.5%;
+  top: 1%; right: 1%;
 
   transition: 0.3s;
 }
@@ -240,13 +247,6 @@ body {
   top: 200%; left: 8%; bottom: 0; right: 92%;
 
   width: 28%;
-}
-
-h1 {
-  color: white;
-  font-size: 7vw;
-
-  text-shadow: 0 0.1vw 10px #222222, 0 0 5px #000000;
 }
 
 #abt-me {
@@ -483,6 +483,8 @@ h1 {
   top: 1%; right: 5%;
 
   width: 4%;
+
+  transition: 0.3s;
 }
 
 .sidenav .closebtn:hover {
@@ -505,10 +507,83 @@ h1 {
   top: 2%; right: 5%;
 
   width: 3%;
+
+  transition: 0.3s;
 }
 
 .dropdown .closebtn:hover {
   opacity: 0.5;
+}
+
+.dropdown #title {
+  text-decoration: none;
+  font-size: 3.5vw;
+  text-align: center;
+  color: #3F9C68;
+  position: absolute;
+  display: block;
+
+  opacity: 0.8;
+
+  top: 2%; left: 10%; right: 10%;
+
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown #description {
+  position: absolute;
+  overflow: auto;
+  margin: auto;
+
+  display: block;
+
+  font-size: 2vw;
+  text-align: center;
+  color: #3F9C68;
+
+  top: 20%; left: 6%; right: 6%;
+}
+
+.dropdown #link-btn {
+  position: absolute;
+  overflow: auto;
+  margin: auto;
+
+  background-color: #3F9C68;
+  border: none;
+  color: #FFFFFF;
+  padding: 15px 32px;
+
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+
+  bottom: 8%; left: 43%; right: 43%;
+
+  font-size: 1.5vw;
+  margin: 4px 2px;
+
+  transition: 0.3s;
+}
+
+.dropdown #maya-slick-holder {
+  position: absolute;
+  overflow: auto;
+  margin: auto;
+
+  top: 24%; left: 35%; right: 35%;
+
+  animation: antihs 60s infinite;
+}
+
+.slick-track {
+  height: 15vw;
+}
+
+iframe {
+  height: 120%;
+  width: 100%;
 }
 
 .linklogo {
@@ -582,20 +657,18 @@ h1 {
 }
 
 .row {
-  animation: antihs 60s infinite;
-
   display: flex;
 
   width: 95%;
 
   left: 0; right: 0;
+
+  animation: antihs 60s infinite;
 }
 
 .column {
   flex: 40%;
   padding: 20px;
-
-  filter: grayscale(100%);
 
   transition: 0.3s;
 }
@@ -604,11 +677,17 @@ h1 {
   filter: grayscale(0%);
 }
 
+.column:focus {
+  filter: grayscale(0%);
+}
+
+.grayscale {
+  filter: grayscale(100%);
+}
+
 @media only screen and (orientation: portrait) {
   #hamburger {
     width: 10%;
-
-    padding-right: 2%;
   }
 
   #logo-home-pg {

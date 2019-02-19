@@ -4,11 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The BER Designs - Design Projects</title>
+    <link rel="stylesheet" type="text/css" href="slick/slick/slick.css">
     <link rel="stylesheet" href="https://use.typekit.net/gvl1eye.css">
     <link rel="stylesheet" href="css/master.css">
     <link rel="shortcut icon" href="img/logo/favicon.ico">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src = "js/main.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src = "js/main.js"></script>
+    <script type="text/javascript" src="slick/slick/slick.js"></script>
   </head>
   <body>
     <div class="background-a" id="background-a-dg"></div>
@@ -27,42 +29,39 @@
       <a href="https://www.linkedin.com/in/beckrivera/" onclick="closeNav()" target="_blank"><img src="img/linkedin.png" class="linklogo" id="linkedin" alt="linkedin"></a>
       <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=riverabecke@gmail.com" onclick="closeNav()" target="_blank"><img src="img/gmail.png" id="gmail" class="linklogo" alt="GMail"></a>
     </div>
-    <div id="MHCCDropdown" class="dropdown">
-      <a href="javascript:void(0)" onclick="closeDropdown(1)"><img src="img/x.png" class="closebtn" alt="X"></a>
-    </div>
-    <div id="oldPortDropdown" class="dropdown">
-      <a href="javascript:void(0)" onclick="closeDropdown(2)"><img src="img/x.png" class="closebtn" alt="X"></a>
-    </div>
-    <div id="photosDropdown" class="dropdown">
-      <a href="javascript:void(0)" onclick="closeDropdown(3)"><img src="img/x.png" class="closebtn" alt="X"></a>
-    </div>
-    <div id="mayaDropdown" class="dropdown">
-      <a href="javascript:void(0)" onclick="closeDropdown(4)"><img src="img/x.png" class="closebtn" alt="X"></a>
-    </div>
-    <div id="illusDropdown" class="dropdown">
-      <a href="javascript:void(0)" onclick="closeDropdown(5)"><img src="img/x.png" class="closebtn" alt="X"></a>
-    </div>
     <a id="logo" href="index.html"><img src="img/logo/logowithshadow.png" id="logo-dg" alt="Logo"></a>
     <a href="designs.html"><h1 class="dg-title" id="designs-title">DESIGNS</h1></a>
     <a href="games.html"><h1 class="dg-title in-other" id="games-title">GAMES</h1></a>
     <div class="row" id="row-a">
-      <div class="column">
-        <!--https://mantuahaverfordcommunitycenter.wordpress.com/-->
-        <a onclick="closeDropdown(0);openDropdown(1);" href="javascript:void(0)" target="_blank"><img src="img/projects/mhcc.png" alt="MHCC" style="width:100%"></a>
+      <div class="column grayscale" id="mhcc-btn">
+        <a onclick="closeDropdown();openDropdown(1);" href="#designDropdown"><img src="img/projects/mhcc.png" alt="MHCC" style="width:100%"></a>
       </div>
-      <div class="column">
-        <!--http://berivera1.github.io/-->
-        <a onclick="closeDropdown(0);openDropdown(2);" href="javascript:void(0)" target="_blank"><img src="img/projects/ber.png" alt="Old Portfolio" style="width:100%"></a>
+      <div class="column grayscale" id="ber-btn">
+        <a onclick="closeDropdown();openDropdown(2);" href="#designDropdown"><img src="img/projects/ber.png" alt="Old Portfolio" style="width:100%"></a>
       </div>
-      <div class="column">
-        <!--https://thebernecessities.wordpress.com/-->
-        <a onclick="closeDropdown(0);openDropdown(3);" href="javascript:void(0)" target="_blank"><img src="img/projects/necessities.png" alt="Photography Blog" style="width:100%"></a>
+      <div class="column grayscale" id="necessities-btn">
+        <a onclick="closeDropdown();openDropdown(3);" href="#designDropdown"><img src="img/projects/necessities.png" alt="Photography Blog" style="width:100%"></a>
       </div>
-      <div class="column">
-        <a onclick="closeDropdown(0);openDropdown(4);" href="javascript:void(0)" target="_blank"><img src="img/projects/maya.png" alt="Autodesk Maya Projects" style="width:100%"></a>
+      <div class="column grayscale" id="maya-btn">
+        <a onclick="closeDropdown();openDropdown(4);" href="#designDropdown"><img src="img/projects/maya.png" alt="Autodesk Maya Projects" style="width:100%"></a>
       </div>
-      <div class="column">
-        <a onclick="closeDropdown(0);openDropdown(5);" href="javascript:void(0)" target="_blank"><img src="img/projects/illustrator.png" alt="Adobe Illustrator Projects" style="width:100%"></a>
+      <div class="column grayscale" id="illustrator-btn">
+        <a onclick="closeDropdown();openDropdown(5);" href="#designDropdown"><img src="img/projects/illustrator.png" alt="Adobe Illustrator Projects" style="width:100%"></a>
+      </div>
+    </div>
+    <div id="designDropdown" class="dropdown">
+      <a href="javascript:void(0)" onclick="closeDropdown(1)"><img src="img/x.png" class="closebtn" alt="X"></a>
+      <h2 id="title">NULL</h2>
+      <p id="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <a id="link-btn" href="javascript:void(0)" onclick="closeDropdown()" target="_blank">VIEW PROJECT</a>
+      <div id="maya-slick-holder">
+        <div class="maya-slider">
+          <div><iframe src="https://www.youtube.com/embed/g_7utrlWJSI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+          <div><iframe src="https://www.youtube.com/embed/vsh10cmZPMc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+          <div><iframe src="https://www.youtube.com/embed/38gZ51__Atk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+          <div><iframe src="https://www.youtube.com/embed/_2n1L-1hQb8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+          <div><iframe src="https://www.youtube.com/embed/Q5QbUA_bcbk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        </div>
       </div>
     </div>
   </body>
